@@ -1,0 +1,256 @@
+/* Global Styles */
+body {
+  font-family: 'Figtree', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #9b51e0;
+  padding: 20px 30px;
+  color: white;
+}
+
+.navbar .logo {
+  display: inline-block;
+  font-size: 24px;
+}
+
+.navbar .nav-links {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.navbar .nav-links li {
+  display: inline-block;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* Hero Section Styles */
+.hero {
+  background-image: url('./background.jpg'); /* Path to your background image */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image */
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the left */
+  height: 400px; /* Adjust based on your design */
+  position: relative;
+  color: white; /* Default text color */
+}
+
+.hero-content {
+  background-color: rgba(255, 255, 255, 0.8); /* White with slight transparency */
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  border-radius: 5px; /* Optional: rounded corners */
+  color: #333; /* Text color inside the box */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #0056b3;
+}
+
+/* Search Bar Styles */
+.search-bar {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 70%;
+}
+
+.search-bar button {
+  padding: 10px;
+  background-color: #9b51e0; /* Background color of the button */
+  color: white; /* Text color of the button */
+  border: none; /* Remove border if desired */
+  border-radius: 0px; /* Optional: rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 1rem; /* Font size of the button text */
+}
+
+.search-bar button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Course Categories Styles */
+.course-categories {
+  padding: 20px;
+  text-align: center;
+}
+
+.course-categories h2 {
+  font-size: 2rem; /* Adjust the size as needed */
+  color: #333; /* Optional: change the text color */
+  margin-bottom: 20px; /* Optional: adjust margin */
+}
+
+.course-categories .categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between category boxes */
+}
+
+.course-categories .category {
+  position: relative;
+  width: 200px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-categories .category-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white; /* Text color */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem; /* Adjust size as needed */
+}
+
+/* Featured Courses Styles */
+.featured-courses {
+  padding: 20px;
+  text-align: center;
+}
+
+.featured-courses h2 {
+  font-size: 2rem; /* Adjust the size as needed */
+  color: #333; /* Optional: change the text color */
+  margin-bottom: 20px; /* Optional: adjust margin */
+}
+
+.featured-courses .courses {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center the cards horizontally */
+}
+
+
+.featured-courses .course-card {
+  background-color: #fff;
+  padding: 20px; /* Increase padding for more space */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px; /* Flexible basis to fit more content */
+  max-width: 300px; /* Maximum width of the card */
+  text-align: left; /* Align text to the left for better readability */
+  color: #333; /* Dark text color for better contrast */
+  cursor: pointer;
+  margin: 10px; /* Space between cards */
+}
+
+.featured-courses .course-card h3 {
+  font-size: 1.5rem; /* Font size for course name */
+  margin: 0 0 10px; /* Space below the course name */
+}
+
+.featured-courses .course-card p {
+  margin: 5px 0; /* Space between details */
+}
+
+.featured-courses .course-card .price {
+  font-weight: bold; /* Make price stand out */
+}
+
+.featured-courses .course-card .rating {
+  color: #f39c12; /* Gold color for rating */
+}
+
+
+/* Testimonials Styles */
+.testimonials {
+  padding: 20px;
+  text-align: center;
+  max-width: 1200px; /* Limit the width of the container */
+  margin: 0 auto; /* Center the container */
+}
+
+.testimonials h2 {
+  font-size: 2rem; /* Adjust the size as needed */
+  color: #333; /* Optional: change the text color */
+  margin-bottom: 20px; /* Optional: adjust margin */
+}
+
+.testimonials .testimonial {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px; /* Maximum width for testimonial cards */
+  margin: 20px auto; /* Center the cards and provide space between them */
+  text-align: left; /* Align text to the left for readability */
+  color: #333; /* Text color inside the card */
+  word-wrap: break-word; /* Ensure long words break properly */
+}
+
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.footer p{
+  text-align: center;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.footer-links div {
+  width: 30%;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 10px 0;
+}
